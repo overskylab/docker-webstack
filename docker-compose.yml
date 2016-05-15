@@ -1,4 +1,4 @@
-version "2"
+version: "2"
 
 services:
   php_apache:
@@ -6,13 +6,13 @@ services:
     container_name: php_apache
     volumes:
       - ./src:/var/www/html
-    ports:
-      - 80:80
     links:
       - mysql
+    ports:
+      - 80:80
 
   mysql:
-    images: mysql:5.7
+    build: ./build/mysql
     container_name: mysql
     volumes:
       - ./tmp/mysql:/var/lib/mysql
