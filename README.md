@@ -1,6 +1,6 @@
-# jb-project
+# Webstack example
 Using docker-compose to build infrastructure.
 ## Components
-- PHP + Apache2
+- Apache2 + PHP
 - MySQL
 - phpMyAdmin
